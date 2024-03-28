@@ -27,6 +27,8 @@ cmds=(
 	"brew cleanup --prune=all"
 	# Diagnose any issues to file
 	"brew doctor"
+	# Uninstall dependencies no longer needed
+	"brew autoremove"
 )
 
 # Run all commands in array
