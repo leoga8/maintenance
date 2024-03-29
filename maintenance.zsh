@@ -35,6 +35,8 @@ if [[ $(eval uname) == "Darwin" ]]; then
 else
 	# Debian/Raspbian
 	cmds=(
+		# Update Oh-My-ZSH
+		"omz update"
 		# Update
 		"sudo apt-get update"
 		# Upgrade
