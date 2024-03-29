@@ -8,7 +8,7 @@ run_cmd() {
 }
 
 # Start
-echo "[INFO] : Manteinance start: $(eval "date")"
+echo "[INFO] : Maintenance start: $(eval "date")"
 
 # Source ZSH
 source ~/.zshrc
@@ -48,4 +48,4 @@ for cmd in "${cmds[@]}"; do
 done
 
 # Done
-echo "[INFO] : Manteinance done: $(eval "date")"
+echo "[INFO] : Maintenance done: $(eval "date")"
