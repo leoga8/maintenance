@@ -2,13 +2,12 @@
 
 # Run command function
 run_cmd() {
-	echo "[TX] : $1"
-	echo "[RX] :"
+	echo "[TX] :: $1\n[RX] ::"
 	eval "$1"
 }
 
 # Start
-echo "[INFO] : Maintenance start: $(eval "date")"
+echo "[INFO] :: Maintenance start: $(eval "date")"
 
 # Source ZSH
 source ~/.zshrc
@@ -50,4 +49,4 @@ for cmd in "${cmds[@]}"; do
 done
 
 # Done
-echo "[INFO] : Maintenance done: $(eval "date")"
+echo "[INFO] :: Maintenance done: $(eval "date")"
