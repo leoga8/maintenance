@@ -2,21 +2,18 @@
 
 # Run command function
 run_cmd() {
-	echo "$1"
+	echo "[TX] : $1"
+	echo "[RX] :"
 	eval "$1"
-	echo ""
 }
 
 # Start
-echo "=== Manteinance start: $(eval "date") ==="
+echo "[INFO] : Manteinance start: $(eval "date")"
 
 # Source ZSH
 source ~/.zshrc
 
-# os=$(eval uname)
-# var="Debian"
-# echo "$var"
-
+# Check for OS
 if [[ $(eval uname) == "Darwin" ]]; then
 	# Mac OS
 	cmds=(
@@ -51,4 +48,4 @@ for cmd in "${cmds[@]}"; do
 done
 
 # Done
-echo "=== Manteinance done: $(eval "date") ==="
+echo "[INFO] : Manteinance done: $(eval "date")"
