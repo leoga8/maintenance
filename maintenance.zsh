@@ -9,15 +9,12 @@ run_cmd() {
 # Start
 echo "[INFO] :: Maintenance start: $(eval "date")"
 
-# Source ZSH
-source ~/.zshrc
-
 # Check for OS
 if [[ $(eval uname) == "Darwin" ]]; then
 	# Mac OS
 	cmds=(
 		# Update Oh-My-ZSH
-		"omz update"
+		"zsh $ZSH/tools/upgrade.sh"
 		# Update Homebrew
 		"brew update"
 		# Show list of outdated items
@@ -35,7 +32,7 @@ else
 	# Debian/Raspbian
 	cmds=(
 		# Update Oh-My-ZSH
-		"omz update"
+		"zsh $ZSH/tools/upgrade.sh"
 		# Update
 		"sudo apt-get update"
 		# Upgrade
