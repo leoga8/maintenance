@@ -21,6 +21,8 @@ if [[ $(eval uname) == "Darwin" ]]; then
 		"brew outdated"
 		# Upgrade items
 		"brew upgrade"
+		# Upgrade casks
+		"brew upgrade --cask"
 		# Cleanup space
 		"brew cleanup --prune=all"
 		# Diagnose any issues to file
