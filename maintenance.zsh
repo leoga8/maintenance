@@ -39,6 +39,8 @@ else
 		"sudo apt-get update"
 		# Upgrade
 		"sudo apt-get upgrade"
+		# Remove packages not needed
+		"sudo apt autoremove"
 	)
 fi
 
