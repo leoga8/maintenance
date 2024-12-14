@@ -19,6 +19,8 @@ if [[ $(eval uname) == "Darwin" ]]; then
 		"brew update"
 		# Show list of outdated items
 		"brew outdated"
+		# Show list of outdated casks
+		"brew outdated --cask"
 		# Upgrade items
 		"brew upgrade"
 		# Upgrade casks
