@@ -25,6 +25,9 @@ if [[ $(eval uname) == "Darwin" ]]; then
 		"brew upgrade"
 		# Upgrade casks
 		"brew upgrade --cask"
+		# Upgrade casks which do not get upgraded with the above
+		"brew upgrade --cask warp"
+		"brew upgrade --cask dbeaver-community"
 		# Cleanup space
 		"brew cleanup --prune=all"
 		# Diagnose any issues to file
