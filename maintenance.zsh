@@ -47,6 +47,8 @@ else
 		"sudo apt-get upgrade"
 		# Remove packages not needed
 		"sudo apt autoremove"
+		# Update Helix
+		"sudo snap refresh helix"
 	)
 fi
 
