@@ -35,6 +35,10 @@ if [[ $(eval uname) == "Darwin" ]]; then
 		"brew doctor"
 		# Uninstall dependencies no longer needed
 		"brew autoremove"
+		# Upgrade pip
+		"pip3 install --upgrade pip"
+		# Outdated pip packages
+		"pip3 list --outdated"
 	)
 else
 	# Debian/Raspbian
@@ -49,6 +53,10 @@ else
 		"sudo apt autoremove"
 		# Update Helix
 		"sudo snap refresh helix"
+		# Upgrade pip
+		"pip3 install --upgrade pip"
+		# Outdated pip packages
+		"pip3 list --outdated"
 	)
 fi
 
