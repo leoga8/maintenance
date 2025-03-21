@@ -55,8 +55,8 @@ else
 		"sudo snap refresh helix"
 		# Upgrade pip
 		"pip3 install --upgrade pip"
-		# Outdated pip packages
-		"pip3 list --outdated"
+		# Outdated pip packages - not needed since Debian manages Python packages through apt
+		# "pip3 list --outdated"
 	)
 fi
 
