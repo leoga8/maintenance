@@ -53,8 +53,8 @@ else
 		"sudo apt autoremove"
 		# Update Helix
 		"sudo snap refresh helix"
-		# Upgrade pip
-		"pip3 install --upgrade pip"
+		# Upgrade pip - not needed since Debian manages Python packages through apt
+		# "pip3 install --upgrade pip"
 		# Outdated pip packages - not needed since Debian manages Python packages through apt
 		# "pip3 list --outdated"
 	)
