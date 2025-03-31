@@ -44,15 +44,15 @@ else
 	# Debian/Raspbian
 	cmds=(
 		# Update Oh-My-ZSH
-		"zsh $ZSH/tools/upgrade.sh"
+		"yes | zsh $ZSH/tools/upgrade.sh"
 		# Update
 		"sudo apt-get update"
 		# Upgrade
-		"sudo apt-get upgrade"
+		"sudo apt-get upgrade -y"
 		# Remove packages not needed
-		"sudo apt autoremove"
+		"sudo apt autoremove -y"
 		# Update Helix
-		"sudo snap refresh helix"
+		"yes | sudo snap refresh helix"
 		# Upgrade pip - not needed since Debian manages Python packages through apt
 		# "pip3 install --upgrade pip"
 		# Outdated pip packages - not needed since Debian manages Python packages through apt
