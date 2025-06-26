@@ -26,7 +26,7 @@ if [[ $(eval uname) == "Darwin" ]]; then
 		# Upgrade casks
 		"brew upgrade --cask"
 		# Upgrade casks which do not get upgraded with the above
-		"brew upgrade --cask warp"
+		"brew upgrade --cask iterm2"
 		"brew upgrade --cask dbeaver-community"
 		"brew upgrade --cask obsidian"
 		# Cleanup space
