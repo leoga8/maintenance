@@ -39,6 +39,8 @@ if [[ $(eval uname) == "Darwin" ]]; then
 		"pip3 install --upgrade pip"
 		# Outdated pip packages
 		"pip3 list --outdated"
+		# Updated outdated packages
+		"pip3 list --outdated | awk 'NR>2 {print $1}' | xargs -n1 pip3 install --upgrade"
 	)
 else
 	# Debian/Raspbian
