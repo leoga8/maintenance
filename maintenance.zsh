@@ -29,6 +29,7 @@ if [[ $(eval uname) == "Darwin" ]]; then
 		"brew upgrade --cask dbeaver-community"
 		"brew upgrade --cask obsidian"
 		"brew upgrade --cask iterm2"
+    "brew upgrade --cask warp"
 		# Cleanup space
 		"brew cleanup --prune=all"
 		# Diagnose any issues to file
